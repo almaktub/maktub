@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>32 — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">maktub</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>32</h1>
+      <div class="meta">July 8, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>I turned thirty-two standing in the parking lot behind work, halfway through a smoke break, phone dead in my back pocket because I forgot to charge it again. No cake, no candles, just the hum of the AC units on the roof and a work truck idling two spots over with somebody else's radio bleeding out the window. That's where the year landed. That's where most of my life actually happens, if I'm honest, not in the moments I planned for but in the fifteen minutes I steal in a parking lot between jobs.</p>
+
+      <p>I spent most of the break doing what you do on a birthday when nobody's around to perform for: I looked back. And on a lot of days, if you ask me to hand you the last decade, all I can find first are the mistakes. Not the abstract kind either. Specific ones. Friendships I burned down over something that felt massive in the moment and reads, now, like nothing at all, the kind of fight you have with someone at twenty-four that neither of you ever fully recovers from, not because it mattered, but because neither of us knew how to be the one to call first. Money I never saved, because saving felt like admitting the good times had an expiration date, and I wasn't ready to admit that at twenty-five, twenty-six, twenty-seven, whichever year it was I told myself I'd start next year instead. People I hurt because I said the thing the second I felt the thing, no pause, no filter, heart just hanging out there in the open where anyone could get a swing at it.</p>
+
+      <p>And still. If someone handed me the version of my life with all of that surgically removed, the clean version, I don't think I'd take it. Take out the mistakes and you take out the only guy I know how to be, the one sitting in a parking lot at thirty-two with something to say. I've earned every bad decision on that list. I just wish it hadn't cost what it cost the people standing closest to me.</p>
+
+      <p>Because that's the part that actually sits heavy. Not my own scraped knees, I can live with those. It's being a bad son more times than I've been a good one, showing up late to the moments that mattered and early to the ones that didn't, and knowing my younger brothers were watching the whole time, taking notes on how to move through the world from a guy who was still figuring it out in real time in front of them. I wasn't the example. I was the cautionary tale with good intentions. If I could go back and hand myself one instruction, it wouldn't be complicated: listen more, talk less, wait before you dive in headfirst wearing your heart somewhere it was guaranteed to get stepped on. I probably still wouldn't have listened. That's kind of the whole point of being twenty-something, you can't hear the warning until you're the one who needed it ten years ago.</p>
+
+      <p>There's a video of some kid, maybe four years old, staring dead into a phone camera saying, "I love myself even though I look like a chicken nugget." I think about that clip more than a grown man probably should. But that's genuinely where I'm at. I love myself even though I've spent most of my life feeling like the wrong shape for every room I ever walked into.</p>
+
+      <p>Because that's the thread running under everything else, longer than any single mistake, older than turning thirty-two. I was always the loud one in rooms that wanted quiet, cracking jokes at a funeral because silence felt worse than getting looked at wrong, and the quiet one in rooms that were already loud, standing at the edge of a party with a drink I wasn't even drinking just to have something to hold. I never landed right in a social setting in my whole life. Not here, and not back in Afghanistan either, not even in my own homeland, at my own family's gatherings, where you'd think belonging should have come standard, no assembly required. It didn't. I was an outcast in two countries and fluent in three languages and somehow never fully spoke the language of the room I was actually standing in.</p>
+
+      <p>It takes getting older to see any of that clearly. You read more, you leave your bubble, you meet enough people who felt the exact same way in the exact same kinds of rooms, and slowly the picture sharpens until you can finally see it for what it was. The room was never the problem. I was just never given the manual, and neither was anyone else, we were all just guessing and calling it confidence.</p>
+
+      <p>I don't know where thirty-two years went. I couldn't give you an itemized list if you put a gun to my head. But I've got a shit ton of stories out of it, enough that I could write a damn book if I ever sat still long enough to stop living the next chapter. I flicked the cigarette, watched the smoke go somewhere I couldn't follow it, and went back inside to finish my shift. That's the whole birthday. That's thirty-two.</p>
+
+      <p>Here's to thirty-three, if I make it. And if I don't, at least I left behind a paper trail nobody asked for that nobody will read...</p>
+
+      <p class="article-published">Published July 8, 2026 8:32 PM PST</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>

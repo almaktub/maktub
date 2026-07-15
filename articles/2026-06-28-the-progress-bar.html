@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Progress Bar — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">maktub</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>The Progress Bar</h1>
+      <div class="meta">June 28, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>I checked on Google Earth recently. 8.6 miles, one way.</p>
+
+      <p>That was the walk to the internet cafe on the west side of Kabul. I did it with a beat-up MP3 player and a pair of JVC headphones I'd duct-taped back together somewhere around the third month. The headphones probably deserved a burial but I wasn't ready to let go. The walk was dusty and loud in the way that city is loud, not traffic-loud, everything-loud, vendors and generators and the particular chaos of a place that wasn't built so much as it just kept happening. Smelly in ways I can't fully describe to someone who hasn't been there and wouldn't want to offend someone who has. But home. Every single step of it, undeniably, completely home.</p>
+
+      <p>What was playing through those duct-taped headphones? Qawwali, mostly. Nusrat Fateh Ali Khan, Sabri Brothers, stuff my parents had around the house that I'd loaded onto the MP3 player without fully knowing what I was getting into. I was too young to really understand the poetry. Qawwali lyrics aren't casual, they're dense with Sufi metaphor and classical Urdu and Persian, the kind of verses scholars spend careers unpacking. I just knew it felt like something. Something large. So I walked 8.6 miles through west Kabul, twice, listening to poetry I couldn't entirely decode, and felt completely at peace with not understanding it yet.</p>
+
+      <p>The cafe itself wasn't exactly a cafe. It was a queue that wrapped around the block, and when you finally got to the front you got a terminal and maybe thirty minutes if the guy running it was in a good mood and the connection wasn't having one of its episodes, which it usually was. You couldn't stream anything. You downloaded to a flash drive, took the flash drive home, and then realized you had no power. So you held onto the flash drive overnight, brought it to the university the next day where there were outlets, transferred whatever you'd downloaded to the MP3 player, opened everything on your laptop. Two days, 17.2 miles of walking, and a flash drive handoff at a university computer lab, all for a few songs. This is the part where I'm supposed to say how hard it was. But honestly? The ritual had a texture to it that I didn't fully appreciate until I stopped doing it.</p>
+
+      <p>I know how this sounds. I also know for a fact that people had it worse, in that city and everywhere else. I'm not doing the immigrant-parent-climbed-Everest-barefoot bit. Just context.</p>
+
+      <p>Fast forward. America. The greatest country on earth, allegedly. Eight years of AT&T.</p>
+
+      <p>Eight years of paying a premium for internet that worked exactly well enough to make canceling feel risky, and badly enough to make me feel like I was being slowly gaslit by a cable company. My brothers and I used to game together and any time there was lag, any time at all, I would hear my name yelled from across the house. "Are you downloading something?" They would say it with a very specific tone, the tone of someone who already knows the answer and has already decided it's your fault. Sometimes I was downloading something. Sometimes I genuinely wasn't, and it was just AT&T doing what AT&T does, which is remind you it exists. It bothered me more than it should have, not the yelling, but the fact that I couldn't just fix it. I'd pull up the bill and stare at it and do the thing I always do when American infrastructure disappoints me, which is think about the flash drive, and the queue, and the walk, and tell myself to calm down.</p>
+
+      <p>There is a perfectly legal pyramid scheme in this country and it runs on coaxial cable.</p>
+
+      <p>Eventually I got out of it. Found a better provider, actual speeds, nobody lagging, nobody yelling my name. Problem solved.</p>
+
+      <p>It is 5 A.M. on a Saturday morning.</p>
+
+      <p>My brothers have been away for a week and they're coming back today. I am awake, deliberately, speed-running downloads before they walk through the door. Trying to get ahead of it. Clear the pipe. The old instinct.</p>
+
+      <p>Here is the thing I had to stop and laugh at: it doesn't matter anymore. We have a real connection now. Nobody's going to lag. Nobody's going to yell my name. The 5 A.M. vigil is completely unnecessary. The problem I'm solving doesn't exist.</p>
+
+      <p>But some part of my brain didn't get the memo, or got the memo and filed it somewhere and went back to what it knows. I am sitting here in the dark, watching a progress bar, out of habit, out of muscle memory, out of something that got wired in during 17.2 miles of round trips and thirty-minute windows and a flash drive I carried like it was a secret.</p>
+
+      <p>What am I downloading? None of your business. Goodnight.</p>
+
+      <p>The scarcity is gone. I'm not sure I want to let it go. That walk taught me something, and I didn't even know what it was saying. Just like the music.</p>
+
+      <p class="article-published">Published June 28, 2026</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
