@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forty Feet From the Bentley — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">maktub</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Forty Feet From the Bentley</h1>
+      <div class="meta">July 30, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>I was on my knees in a client's living room running calibration on a system that cost more than my car, twice over, when the three of them started talking about a Lexus.</p>
+
+      <p>The client. My boss. A friend of the client's, in for the day, wearing the specific kind of relaxed that only shows up on people who've never once had to check their bank account before buying something. Somewhere in the driveway, apparently, a Lexus had come within an inch of clipping somebody's Bentley, and this had become the subject of real, sustained outrage, the kind of energy you'd expect from a near-miss on the freeway, not a parking lot. Not a laugh about it either. Outrage. My boss's buddy shook his head like he'd personally witnessed a crime and said, "people who drive a Toyota drive one for a reason," and the other two nodded like a verdict had just been read, three grown men in a nine-figure living room, gravely concerned about which German-adjacent badge almost touched which other German-adjacent badge.</p>
+
+      <p>I had my calibration mic in one hand, doing my best impression of a man who is extremely focused on pink noise and not at all listening to the trial happening ten feet behind him. My Corolla key was in my pocket, and I found myself palming it through the fabric like it had personally done something wrong. I wanted, genuinely, to stand up and deck both of them, mid-sweep, leave the crossover settings exactly where they were and let that be my professional legacy in that house. Not because the sentence was aimed at me. It wasn't, not on purpose. Because of what it assumed was true about anyone in a room who'd take that sentence personally, and because nobody in that room seemed to think anyone like that might actually be in the room, calibrating their subwoofers.</p>
+
+      <p>Here's the part that actually got under my skin, once I'd had a minute to sit with it instead of just wanting to swing. It wasn't malice. I've thought about this more than the moment probably deserved, and I don't think my boss meant a single word of it as a shot at me. I've only worked for him three months. Call it sixty-something mornings, give or take, of him watching me climb out of that exact Corolla in that exact driveway before we go make somebody's house sound incredible. Sixty-something mornings is apparently not enough mornings for a fact to actually land. It just never connected, in real time, that the car being mocked was parked forty feet away with my name on the insurance. Not cruelty. Just a blank spot where I should have registered. Somehow that's the funnier insult and the worse one at the same time. A real insult means you were seen and dismissed. This was cleaner than that. I wasn't dismissed. I just hadn't fully loaded yet.</p>
+
+      <p>There wasn't that kind of money in my family growing up, and I want to be careful here because it's not a hard-luck story. My dad did well for himself, worked for everything he built, and never once made me or my brothers feel like we were less than anybody at the dinner table. That part of it was solid. The sideways looks never came from inside the house. They came from outside it, from the wider machinery of a country that's decided, with real confidence, that it can read your entire net worth off the badge on your trunk like it's a credit report stamped in chrome, and will say so out loud in front of you if it forgets, even for a second, that the guy holding the key to the badge in question is standing right there with a calibration mic in his other hand.</p>
+
+      <p>What gets me is the specific shape of the job. I'm good enough, apparently, to be trusted completely alone in a house worth more than every house my whole family's ever lived in combined, good enough to be handed the actual sound of the place and get it dialed in exactly right, good enough that the client will brag to his friends about the guy who really knows what he's doing. Just not quite present enough, in that same room, thirty seconds later, to be a person whose own car might be parked forty feet from the Bentley they're so worried about. Trusted with the six-figure system. Invisible next to the six-figure cars. That's a hell of a range to hold in one afternoon.</p>
+
+      <p>For the record, if the Corolla and the Bentley actually did collide, my car walks away fine and costs forty bucks at any auto parts store in America to fix whatever doesn't. Theirs needs a specialist flown in and a very uncomfortable phone call to the insurance company. Nobody in that driveway was going to bring that up either.</p>
+
+      <p>I didn't say anything. I never do, in the moment, that's not the job either. I finished the calibration. The system sounded incredible when I was done with it, better than either of those cars, probably, dollar for dollar. Then I drove home in the Corolla, which started on the first try, like it always does, which got me there and back, like it always does, which has never once needed anyone in a driveway to approve of it to keep running.</p>
+
+      <p>Nobody in that room decided what I was worth. They just forgot to notice I was in it. The key stayed in my pocket. It still starts the car every morning either way.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
