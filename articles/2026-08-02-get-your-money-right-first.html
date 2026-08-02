@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Money Right First — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">maktub</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Get Your Money Right First</h1>
+      <div class="meta">August 2, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>Four years since my last relationship ended, and I still haven't tried again. Ask me why and I've got an answer loaded and ready: I need to get my money right first. Sometimes I upgrade it to mental health, tell people I'm working on myself before I put that weight on someone else. Both sound responsible. Both are also, if I'm honest, a nicer way of saying I'm scared, and "not ready yet" reads a lot better in a text than "terrified, please don't leave me on read."</p>
+
+      <p>I used to believe my own excuse completely. Then I started noticing everyone else running the same script with different props.</p>
+
+      <p>Get your money right before you go looking for love, we say, like it's gospel. Meanwhile there are homeless people sleeping curled into each other under an overpass every night this winter, and nobody calls that love, because it's dirty, because it's beneath the version of love we've all agreed to respect. Somebody decided love needs collateral. I'd like to know who. It certainly wasn't anyone actually broke, because broke people seem to be doing just fine at it without a savings account to show for it.</p>
+
+      <p>My grandparents' generation, the ones I grew up hearing about at every dinner table, had a version of family that looked almost embarrassingly simple by comparison. One set of parents, six or seven kids sometimes, and somehow all six or seven got loved like they were the only one. Now we've inverted it. One kid, sometimes, cycling through a stepfather, a mother's new boyfriend, a father's second family two states over, each one introduced with the same forced smile: this is your new whoever, say hi. We didn't run out of love. We ran out of staying.</p>
+
+      <p>Nobody wants to say that plainly, because it sounds like judging someone's divorce, or someone's custody arrangement, or someone's decision to leave a bad marriage, which, to be clear, is sometimes exactly the right call. But somewhere between "leaving was necessary" and "a kid needing a flowchart to explain who's coming to Thanksgiving is just normal now," something got lost, and pointing at it gets you called judgmental before you finish the sentence. So we don't finish the sentence. We just keep doing it.</p>
+
+      <p>Here's what I think is actually happening, underneath the money excuse and the stepfather math both: we're all getting rewired in real time, and none of us signed up for it. Dating apps taught a generation that the next option is always one thumb-flick away, so nobody has to sit through an awkward silence when they can just swipe out of it. Therapy language taught us to call avoidance "protecting my peace," which sounds like wisdom and is really just being scared with better lighting. I've done both. I've said "I'm not in the right headspace" to my own reflection more times than I've said it to another person, and both times I meant "I'm scared, and this sentence is shorter."</p>
+
+      <p>I don't think I'm uniquely broken. I think I'm early-onset normal. Ask around. Ask anyone my age who hasn't dated in years why not, and count how many times you hear "the timing" before someone finally says "I got hurt and never figured out how to risk it again." Timing is the socially acceptable translation. It always has been. My own parents' generation didn't have that translation available to them, not because they were braver, but because "get my money right first" wasn't a phrase yet, divorce wasn't a shrug yet, and love not being conditional on your bank statement wasn't up for debate.</p>
+
+      <p>Four years is a long time to hide behind a good-sounding sentence. Long enough that I finally noticed the sentence was the whole problem, not the excuse for it. My money, for the record, is fine. Has been for a while. I just like checking the balance every so often like it's going to say something different this time.</p>
+
+      <p>I'm not fixing this in one essay, and I'm not pretending the fix is easy: text someone, take the leap, cue the movie score. That's not how fear works, mine or anyone else's. But I can at least stop calling it a budgeting issue, a mental health issue, a "when the time is right" issue. It was never any of those. What I've actually been waiting on this whole time is the day I stop being able to hear myself lie. Maybe there's no guaranteed match out there for all eight billion of us. Maybe some of us push the boulder up and there's nothing waiting at the top. I'm pushing anyway.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
