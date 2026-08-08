@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">maktub</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Homework</h1>
+      <div class="meta">August 7, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>My boss has a new toy. Six figures, delivered in foam and cardboard the size of a washing machine, and he hands me the manual like he's passing off a chore. Hey say, got a new toy, time for you to do some homework. He's sixty-something and does not read manuals, does not want to, has never wanted to. That is what I am for.</p>
+
+      <p>I dropped out of a computer science bachelor's because I could not stand memorizing facts off a page to compete against people with better memories than mine. Not proudly, I want to be clear, I do not tell that story at parties to sound like a rebel. I tell it because it is true and it is the reason my degree does not exist. What I actually hated was not computers, though for years I told myself and everyone else that it was. What I hated was being handed a stack of paper and told the way through it was memorization instead of touching the thing, breaking the thing, fixing the thing. Homework, in the literal sense, was the enemy.</p>
+
+      <p>So I left. Banking first, fintech after that, eventually a computer science job at a company you would recognize immediately if I named it, top ten in the world, the kind of place people assume fixes your life once you get inside. It does not. I made real money there, the kind that used to feel abstract, and I kept waiting for the day it would feel like enough. It never arrived. I sat in meetings about software I did not care about, made by a company I did not care about, for close to two years, and the whole time some other version of me was in the passenger seat going, this is not it either.</p>
+
+      <p>The dream, as I understood it back then, was audio and video. Real gear, not consumer junk, the kind of thing you research for months before you buy it. I have never owned an AirPod and never will, not because I think less of people who do, but because I did the reading and I know what I am giving up for the convenience. Wired headsets, a stack of DACs, a turntable I am embarrassingly proud of. My cousins started calling me unc before I was one. Now I am one. Damn.</p>
+
+      <p>So when the AV job came, the actual one, hands on actual equipment, I thought I had found the exit. No more spreadsheets, no more standups about a product I would never use, just wires and rooms and the kind of gear I used to save up for. And for a while that was true. Some days it still is. My boss is old money and older patience, he buys the newest, most expensive thing on the market because he can, then hands it to me to figure out. Every few weeks. Another box. Another manual. Another version of the exact thing I dropped out of school to avoid, except now it has a brand name on it instead of a professor, and I do it anyway, because this time I actually want to know how it works.</p>
+
+      <p>That's the part that took me a while to understand. It was never the computers. Computers followed me from the bank to the fintech job to the AV job to my own living room, where I still spend my nights reading spec sheets for fun. What I actually ran from was being told to learn something I did not choose, on someone else's clock, for someone else's reason. And I kept running toward what I thought was freedom from that, a different job, a different industry, more money, less money, and it kept turning out to be the same room with a different paint job.</p>
+
+      <p>Careful what you hate, some philosopher probably said, close enough to Nietzsche that I will let him have it, you might become it. I do not think that is quite what happened to me. I did not become the thing I hated. I just found out the thing I hated was never really the subject. It was who got to decide.</p>
+
+      <p>Your dream job is still a job. You still clock in. You will still get chewed out, still eat a customer's bad day, still screw something up and have to own it out loud. Nobody warns you about that part because it ruins the ending of the story, the one where you finally arrive somewhere and the arriving fixes you. It does not. You just get better gear to be tired in.</p>
+
+      <p>He still calls it homework. I still do it anyway.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
