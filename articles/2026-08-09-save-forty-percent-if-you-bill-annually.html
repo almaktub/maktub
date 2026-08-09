@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Forty Percent If You Bill Annually — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">maktub</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Save Forty Percent If You Bill Annually</h1>
+      <div class="meta">August 9, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>Ages eight to twelve, Kabul, Third Makroyan, block 23, apartment 93, fifth floor, one of the Soviet buildings the Russians left behind in the sixties like a bad houseguest. Majority Sunni neighborhood. We were Shia. My parents taught me early not to say so, learn to pray like them, walk like them, agree with whatever they were saying, and never once let it slip. So I learned the Sunni prayer, not because I believed one version over the other, but because it was the price of admission to something I wanted badly enough to lie for.</p>
+
+      <p>Every Friday, and most mornings besides, I walked thirty-five minutes before the sun came up, early enough to do the part nobody puts in the pamphlets about a mosque. One of us worked the hand pump, the rest filled buckets, grabbed brooms, and washed the floor before the qari showed up to lead prayer. Nobody dressed that up as holy. It was dues, the toll for having a seat, and we paid it as a team before we ever got to pray. Then came the actual prayer. After prayer came Quran recitation. After recitation came the only part I actually showed up for, which was soccer, a dozen of us running around on whatever patch of ground wasn't rubble that week. That's the earliest memory I have of anything like teamwork, a hand pump and buckets and a floor that needed washing before anyone got to pray. The friends and the soccer are what kept me walking back at five in the morning for four years straight.</p>
+
+      <p>I lost that place at twelve, when my dad's job put a target on him and we had to start moving, again and again, inside Kabul. I'm keeping the specifics of that vague on purpose, some things aren't mine to spell out. What I know is every move meant my dad starting over completely, again, for the nth time, whatever stability he'd rebuilt since the last place, gone and rebuilt from scratch. It meant there was never enough ground under any of us to build anything like the masjid again, not with the same people. The friend group from Third Makroyan scattered when we left and I never got closure on it. I still have friends from back home, just not those specific ones, the kids I prayed a religion that wasn't mine next to, five mornings a week, before the sun came up.</p>
+
+      <p>In 2014, when I was twenty, my dad decided there was nowhere left inside the country worth running to, and started over one more time, somewhere that wasn't even the same country this time. We came to America.</p>
+
+      <p>I didn't have a word for what I'd lost until years later, when I read that people call places like that a third place, not home, not work, just somewhere you go to be around people for no reason that has to justify itself. Once I had the word, I noticed the pattern everywhere, not just in what happened to me. The park, the church, the mall, the barber shop, all of it going the same way mine did, minus the war. Nobody torched them. It happened slowly enough that everyone could tell themselves they imagined it, until they noticed they hadn't been in months and neither had anyone else they knew. Mine was a man with a grudge. Everyone else's was simpler than that, those places are expensive to build and they don't monetize, so nobody builds them anymore. What gets built instead is a subscription, a delivery app, a platform you already know the name of, all of it engineered to be consumed by exactly one person at a time. You're not bad at socializing. The places you would have done it in were quietly taken apart and sold back to you as something you pay for monthly, with a discount if you commit to the year.</p>
+
+      <p>That's the first loss. It took eight years of my dad rebuilding from zero every single time we landed somewhere new, and then one last rebuild in a country he didn't grow up in, to finally end it.</p>
+
+      <p>The second loss took a business model.</p>
+
+      <p>I lost the first one the hard way. Losing the idea that I could ever get another one, the easy way this time, somehow felt worse.</p>
+
+      <p>The first mosque I walked into in America was that same April, 2014, the same month we landed, when an older relative of ours passed away and the family held a khatm Quran, everyone sitting in one room, each of us reading a portion until the whole book had been read once through, to send the prayers along to whoever had just died. I expected something like what I'd left. What I got was women arriving to pay their condolences wearing more makeup than I'd ever seen at a wedding, men walking in with chains on and the brightest, most expensive-looking suits I'd ever seen at anything. I knew inside of five minutes I wasn't home anymore.</p>
+
+      <p>That's not a one-off. Walk into a mosque here now and it plays less like a place to belong and more like an in-person version of Tinder, everyone a little too dressed up, a little too aware of who's watching, there for the optics of finding someone rather than the boredom of just being around people. I want no part of that, and it isn't because I've gotten too cynical for community. It's because I already know what the real version felt like, a hand pump and a broom before sunrise, and this isn't it.</p>
+
+      <p>My dad risked his life so his kids could have a future. And the thing that finally finished off what he couldn't protect me from wasn't the same threat that chased us out of Kabul. It was a subscription model. Somewhere there's a version of this that saves forty percent if I bill annually.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
