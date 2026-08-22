@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encore — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">maktub</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Encore</h1>
+      <div class="meta">August 21, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>People keep telling me they miss the old me. Not as an insult, more like a fond complaint, the way you'd bring up a restaurant that closed down. They say it warmly, like they're doing me a favor by remembering. The life of the party. The guy who could walk into a room and the room would just adjust to him.</p>
+
+      <p>I used to sing constantly, not performing, just leaking, in the car, in the kitchen, mid conversation if a word happened to rhyme with a lyric I knew. I did impressions on command, unprompted, whether or not anyone asked for one twice. I had a whole rotation of self-deprecating jokes that could crack a room wide open, the kind where people would repeat the line back to me weeks later like I'd handed them something. I haven't done any of it in front of another human being in almost five years. Not because something happened to my voice or my timing. I just stopped.</p>
+
+      <p>I've tried to figure out what that version of me actually was. Some days I think he was just oblivious, too early in life to know yet how much the game costs you. Other days I think he simply didn't have anything on him. No weight, so nothing to carry, so nothing to perform around. Both explanations let me off easy, which is usually a sign neither of them is the whole truth.</p>
+
+      <p>Here's the part I've only recently been able to say out loud. I built that guy on purpose. I was loud in the places I was supposed to be quiet and quiet in the places I was supposed to be loud, and somewhere in there I figured out that if I turned the volume all the way up on charm, nobody would notice I didn't know where I fit. The singing, the impressions, the self-deprecating jokes, the room lighting up when I walked in, all of it was a decoy. It worked so well that even I started mistaking the decoy for the guy running it.</p>
+
+      <p>And the actual him, the quieter one, the one who showed up once the decoy got tired of running, doesn't seem to be what anyone signed up for. People don't say it cruelly. They're not trying to wound me. But "I miss the old you" is still, underneath the fondness, a vote. And I keep losing it to a guy who was never fully real to begin with.</p>
+
+      <p>You're supposed to change, that's the whole deal, nobody gets to keep the same face at forty they had at nineteen, and honestly the face was always the least of it. Nobody warns you the personality has an expiration date too, that the version of you people fell for was never guaranteed past a certain year, no renewal option, no refund. I've mostly made peace with that. But some days I still agree with them. I miss him too. I just can't tell anymore if I miss who he was or if I miss not yet knowing what it costs to be looked at and actually seen.</p>
+
+      <p>I don't know which version I'm supposed to walk toward. I don't think I'm going to figure it out from a car on the way home from work. But I know this much: I didn't stop because the song left, or the jokes ran out, or I forgot how to do the impressions. I stopped because I got tired of performing for people who only ever wanted the show.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
