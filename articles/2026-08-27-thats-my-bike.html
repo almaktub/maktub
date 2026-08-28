@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>That's My Bike — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>That's My Bike</h1>
+      <div class="meta">August 27, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>I used to think I had a complicated relationship with religion because of something I believed, or didn't. Turns out it's simpler and worse than that. I used religion, other people's sacred things, as a place to hide my actual self when the truth wasn't safe to hand over. You can mask a lot behind something everyone's agreed not to question too hard.</p>
+
+      <p>They say you're a product of your environment. Fine, I'll take that. But what happens when the environment won't sit still long enough to finish the job? What are you then, half formed by four different places that each wanted a different version of you just to let you stay?</p>
+
+      <p>My family left Afghanistan in 1990, my sister already born, me not yet. I came into the world in Pakistan four years later. Growing up there, we went to a private school that wasn't fancy, the kind that just didn't ask immigrant families to prove anything extra to get in the door. Religion came up sometimes. Nobody kept score by it. I don't remember anyone caring whether you prayed Shia or Sunni, or if you prayed at all.</p>
+
+      <p>Then the Taliban fell, late 2001 into early 2002, Hamid Karzai took over as a placeholder president under the UN, and every Afghan family I knew had the same reflex. Home is free now. Let's go home. Nobody sat down and thought it through. Of course you go home.</p>
+
+      <p>We landed first in Third Macroyan, Sunni-dominant, full of people who'd just come out the other side of four or five decades of war, the Soviets, the mujahideen, the Taliban, one civilian government finally standing where a small army used to be. Everyone was still on edge. Anything that didn't sound like you or move like you got treated as a threat, because for most of their lives it had been one. I was the kid who talked wrong. I'd grown up on Urdu, and now I was relearning arithmetic I already knew cold, timetables I could do in my sleep in English, except now I had to do them in Dari, sitting there like I'd never seen a multiplication table in my life, while everyone quietly decided how soft-spoken and respectful I was, which apparently wasn't the compliment there that it had been in Pakistan.</p>
+
+      <p>It didn't take long to learn the actual rule of the place. You fight for everything or you get left holding nothing. Being quiet and polite, which had made me a good kid back in Pakistan, made me easy pickings here.</p>
+
+      <p>On top of the language and the timetables, I had to learn a whole new religion, or at least a whole new version of one. Growing up, Islam had been simple. One God, His last prophet, treat people decently, hurt nobody. There's a Bill Burr bit I love where he boils the whole thing down the same way: don't kill anybody, don't steal, treat people right, don't touch my wife, that's my bike. That was basically the version I got as a small kid. Then I hit third grade in Third Macroyan and found out that wasn't going to cut it. I had to memorize the six kalimas word for word, the way you'd cram for a test, because that's exactly what it was. Everyone flexed it like currency. If you didn't have it down cold, you got exposed as an outsider on the spot. I can recite the six kalimas better than I can tell you what I actually believe. That's not a joke I'm proud of. It's just true.</p>
+
+      <p>We moved again, this time to Dasht-e-Barchi in west Kabul, Shia-dominant, and it was the same test with the answer key flipped. Same suspicion of outsiders, same requirement to prove you belonged by reciting the right things, except now I had to relearn it all from the other side of the exact argument I'd just spent two years memorizing. At home, my parents let religion be something you grew into, not something forced on you. Outside the front door, it was armor, and you'd better be wearing it correctly or you'd get hurt.</p>
+
+      <p>I studied religion harder than I've studied almost anything else in my life, and it had nothing to do with wanting to know God. It was about not getting caught not knowing the password.</p>
+
+      <p>Then I got to America, where you're supposedly free to believe whatever you want, and the first thing that freedom gave me was room to actually read. Different books, different traditions, no neighborhood grading me on the answers. What I landed on wasn't peace exactly, more like exhaustion at what I'd spent so long fighting over. It's all he-said-she-said in the end. Everybody's so busy defending who delivered the message that nobody's actually listening to it anymore.</p>
+
+      <p>So yeah, I've got a complicated relationship with religion. It was never really about God. It was about what I had to become, over and over, just to not get singled out in whatever neighborhood I happened to be standing in that year. If you're a product of your environment, and mine kept changing before I ever finished the last version of myself, I genuinely don't know what that makes me.</p>
+
+      <p>I still don't know. But now at least I know why I don't.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
