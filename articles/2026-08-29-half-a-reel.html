@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Half a Reel — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Half a Reel</h1>
+      <div class="meta">August 29, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>The professors were always late. They had to walk from one end of campus to the other, so there was a window every morning, five minutes, sometimes ten, where the classroom belonged to nobody but us. Girls sat up front, always. Boys sat in the back, and the worst of us sat in the very back, and I was the worst of us. Class clown, full time, no understudy.</p>
+
+      <p>That's when Fawad would kick his sandals off, climb up on the table, and yell across the room: ustad Beltoon, namekhaani yak neem feeta? Mister Beltoon, won't you give us half a reel? Half a tape. A few lines, at least.</p>
+
+      <p>And obviously I would. I had a good voice back then, and more than that, I had an audience, and I have never in my life said no to an audience. I'd do my Beltoon impression, which was, I'm told, genuinely excellent, and Fawad would get up on the table in his peran tumbaan, this huge baggy thing, and start dancing like a man with nothing left to lose. The girls up front would roll their eyes, loudly, performatively, the way you do when you want everyone to know you disapprove. But I knew, and they knew I knew, that they weren't mad about the free show. Nobody's ever mad about free entertainment. They just weren't allowed to enjoy it out loud.</p>
+
+      <p>Fawad was the one who cooked our eggs and tomato most mornings, the same guy everyone gave hell for his cooking. Four years older than the rest of us, twenty-four to my seventeen. He'd been working his dad's farm since he was eight, and it showed in a way the gym never quite manages to fake. Not the kind of strong that needs an audience. He wore his peran tumbaan every single day, baggy, humble, always laughing at something, and he kept an eye on the room the way you'd expect from someone who genuinely couldn't help it.</p>
+
+      <p>There was a girl in our class from serious money. Her brothers picked her up every day in a bulletproof Hilux, the exact model every actual dangerous man in Kabul was driving back then, and they wore their pistols clipped to their belts like it was nothing, like a phone or a set of keys. One day they didn't wait outside. They walked onto campus like they were looking for a war, and you know that feeling from a movie when the camera cuts to the guy who doesn't know yet that trouble is walking straight at him. That was me.</p>
+
+      <p>The brother stopped in front of my desk. My sister says you bother her every day in class. I told him I had no idea what he was talking about. She says you keep singing love songs and staring at her. She doesn't like it. Stop. I told him the singing part was true, I did that every day, but he had the second part wrong, I wasn't singing at anybody, laughing while I said it because that's what fear sounds like when it's trying to pass as calm.</p>
+
+      <p>He looked at me for a second. You don't even have a mustache yet, you little kid. You ever smoke a cigarette before? He was already holding a half-smoked Marlboro Menthol. Take a hit of this without coughing and maybe I let this go for how stupid you'd have to be to mess with my sister.</p>
+
+      <p>I want to be honest about that moment because it wasn't brave, it was arithmetic. I'd been in plenty of fights by then, real ones, but these guys had guns on their belts, not fists, and I know exactly where the line is between brave and stupid, and I was standing right on top of it doing the math. Take the cigarette, cough or don't, and maybe walk away. Or say no to a man holding a gun in front of his friends. I reached for it.</p>
+
+      <p>Fawad's hand caught my wrist before I got there.</p>
+
+      <p>He stepped in front of me. I'll smoke it, he said. And I'll put it out on you if you don't get out of my sight by the time I count to three.</p>
+
+      <p>The brother pulled his shirt back enough to show the pistol. You know whose son I am? I could kill you right here.</p>
+
+      <p>Fawad lifted his own shirt and showed him a Beretta.</p>
+
+      <p>And I could too, he said.</p>
+
+      <p>By then half the classroom was standing behind him, most of them carrying something, a knife, whatever they had, everyone except me, the one guy who apparently hadn't gotten that memo. Fawad kept talking, calm the whole time, like he was explaining a rule that should have already been obvious. I'm the oldest one in this room and I watch everyone in it. Your sister is my sister. He's my little brother. If he ever crossed a line with a girl, or touched a cigarette, I'd be the one to kill him myself. So leave. Before I do something to you for no reason at all.</p>
+
+      <p>They left. Something about coming back with their father, killing all of us. They never did. It was an empty threat and everyone in that room, including them, probably knew it the second it left his mouth.</p>
+
+      <p>I was still standing there, genuinely shell-shocked, when Fawad turned to me. If you ever so much as think about smoking, he said, I will never speak to you again. Love you, man.</p>
+
+      <p>I still haven't smoked. That was the deal, and I've kept my half of it for years now without even having to try, because it was never really about the cigarette. I've thought about that morning more times than I can count, mostly on days when protection means something smaller now, someone talking over you in a meeting, someone letting a comment slide because it's easier than saying something. None of it has ever cost anyone a gun pulled in a classroom. I miss you boys. I miss knowing, without having to check, that someone in the room had already decided what they'd do for me before I even knew I needed it.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>

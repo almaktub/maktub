@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Home Tastes Like — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>What Home Tastes Like</h1>
+      <div class="meta">August 29, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>The first bite is what did it. My aunt's kitchen in San Diego, the morning after we landed, eggs and tomato going soft in the pan the exact way my mother makes them, the exact way every mother in Kabul makes them. It smelled like home before I was even at the table. I said Bismillah, took the first bite, and somewhere between my tongue and my brain the whole thing collapsed. Same ingredients. Better ingredients, probably. And it tasted like nothing. Not bad. Just not it. That was the moment I understood I hadn't just left a country behind. I'd left a taste behind, and no amount of real eggs and real tomatoes was going to get it back.</p>
+
+      <p>Back at Kabul Polytechnic, we ate that same dish almost every morning, and it was never because we could afford to. I'd walk to the dorm before class, wake the guys up one by one, and whoever had pocket money would hand it over until we had enough for eggs, tomatoes, onions, oil, bread, and a bottle of coke, warm, no ice, because ice cost extra and extra wasn't in the budget. Only one of us, Fawad, actually knew how to cook, and everybody gave him hell for it because his food tasted like shit, but he was the guy, so he cooked. We knew exactly what that breakfast was going to cost us later. Crowded buses instead of the ones with seats. No money left for anything else that day. We knew it every single morning and we did it anyway, because that plate of eggs and tomato, eaten with seven guys who didn't grow up speaking the same version of Dari or praying the same way or coming from the same province, tasted better than anything I have eaten since. Not because of the eggs. Because of the table.</p>
+
+      <p>That's the part nobody warns you about when they tell you you're moving somewhere better. Nobody tells you the food is going to follow you and betray you at the same time. For weeks after we landed, family kept inviting us over, and they'd cook these enormous spreads, five and six courses, plated like a wedding, more food than the whole dorm used to see in a month. And none of it tasted like anything. I'd eat a few bites and stop, and they'd notice, and they'd laugh it off. His taste buds aren't used to this yet. Don't worry, he'll get used to it, this is cleaner, this is healthier. I said yeah, yeah, sure, and let it go, because how do you explain that the problem isn't the food. The problem is the food doesn't come with the room it used to come with.</p>
+
+      <p>We were leaving a war behind. My father was getting death threats, we'd moved apartments every few months just to stay ahead of them, and there I was, sitting in a kitchen in San Diego with more food on the table than I knew what to do with, and the thing I couldn't stop thinking about was a warm coke and undercooked eggs made by a guy from Parwan who couldn't cook. That's not ingratitude. That's just what home does. It doesn't ask permission before it shows up, and it definitely doesn't show up when you're prepared for it.</p>
+
+      <p>It's been eleven years. I have a home now, my parents, my siblings, all of us still close, still under one roof some of the time, and I don't take a day of that for granted. But it's not that home. I haven't been back to Afghanistan since, and some mornings I still catch myself checking a plate of eggs against a memory it was never going to match, out of habit more than hope at this point. I know exactly what home tastes like. I just can't order it anywhere.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
