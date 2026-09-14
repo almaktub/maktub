@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imbeciles — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Imbeciles</h1>
+      <div class="meta">September 14, 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>I used to stay out until the sun came up on a Tuesday. Not for anything special. No occasion, no story worth telling afterward, just a few of us somewhere until the sky went gray, and then home, shower, work by seven. It didn't feel like an achievement. It didn't feel like anything. The idea that it might cost me something never entered the building. That was a lot of hair ago.</p>
+
+      <p>Now the cost shows up before the invitation does. Somebody mentions there's a thing after the thing and I'm already running numbers. How far. How long. Who's going to be there. What time does this put me in bed, and what does that do to tomorrow. I don't say any of it out loud. I say I'll try to make it, which everyone has correctly learned to file as no.</p>
+
+      <p>That's the ordinary part of getting older and everybody writes it. What follows is the part I'd rather keep to myself. When I do go, I sit there and I convict people. Somebody's telling a story I've heard a version of four times. Somebody's laughing at a volume the joke didn't earn. A guy is explaining his job to a woman who is nodding at the wall behind him. And I'm on the edge of the couch with a drink I'm not drinking, running a silent trial where everyone is losing.</p>
+
+      <p>Nobody asked me to be the judge. I want that on the record, because I know it. I don't hand myself the authority and I wouldn't know how to justify it if somebody asked. I have no body of work that entitles me to sit above a room of people trying to enjoy a Saturday. It doesn't matter. The verdicts come in anyway, unbidden, fully formed, in a voice that sounds suspiciously well read. That's the Nietzsche in me, and I mean it as an accusation. He takes the microphone and announces that these people are wrong, this is a waste, you are all imbeciles, and you are letting everything you built go soft.</p>
+
+      <p>The contempt is the convincing part. It never arrives as a mood. It arrives as analysis. It has evidence. It has a tone of voice. It can cite things. When I decide a room is shallow I'm not guessing, I'm concluding, and the conclusion comes with footnotes. That's the trap in it. Being tired feels terrible and you know the whole time that it's happening. Being right feels wonderful and you never think to check. A man with no patience left will always be able to explain why nothing deserved his patience.</p>
+
+      <p>And sometimes I am right, which is what keeps this from being simple. Some rooms are shallow. Some conversations really are four people waiting for their turn to talk. If the judgment were always wrong I could throw it out and go back to enjoying myself. It isn't always wrong. It's just always there, and always there is a different thing, and a much worse sign. A stopped clock is right twice a day and still broken.</p>
+
+      <p>I've been standing slightly outside rooms my whole life anyway. New country, new school, a language I was still assembling in my mouth while people waited for me to finish a sentence. I used to call that being shy. It was closer to surveillance. Watch the group, learn the rules, don't speak until you're sure. The position hasn't moved an inch since. What changed is the posture. I used to stand outside the room hoping to be let in. Now I stand outside it having decided it isn't worth entering. Same distance, better excuse.</p>
+
+      <p>So the thing I keep circling isn't whether ignorance is bliss. Ignorance isn't on the menu. You don't get to unknow something, there's no setting for it, and anyone selling you the version where you go back to being simple and happy is selling you a vacation you can't take. The real question is narrower and much less flattering. Did I get smarter, or did I just get tired and pick up some vocabulary on the way down.</p>
+
+      <p>Because the kid watching the sun come up on a work night wasn't wiser than me. He wasn't necessarily happier either. He just wasn't keeping score. Nothing that happened in that room was being entered into evidence. The night was allowed to be a night. Now every gathering is a case file, and I'm the only one in the building who knows a trial is underway, which makes me the worst company in a room full of people who are, at minimum, present.</p>
+
+      <p>I'd like to call what replaced him wisdom. I've just never known wisdom to arrive this fast, or this pleased with itself.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
