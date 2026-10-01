@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Few Things to Discuss — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>A Few Things to Discuss</h1>
+      <div class="meta">Published <time datetime="2026-09-24">September 24, 2026</time></div>
+    </div>
+
+    <div class="article-body">
+
+      <p>I was driving home from work, listening to “Blue” by Little Simz, when she said something I kept thinking about for the rest of the drive. God had chosen her for the job, and she agreed.</p>
+
+      <p>It was the agreement that got me. I’m usually much quicker to agree that something is my fault. Give me a difficult situation and I’ll start working backward, looking for the decision I should have made differently, the thing I should have noticed. Sometimes that’s useful. Sometimes I’m taking responsibility for things I never had any control over.</p>
+
+      <p>But listening to her, I thought about my sister. About losing my uncle, who had become my best friend after I lost her. About my father, and how I’ve watched him break and shrink over the years. The man who uprooted his entire livelihood, left his homeland, and sacrificed everything he could think to sacrifice for a better tomorrow for his children.</p>
+
+      <p>I wonder how many times he thought, surely this is enough now. Surely I’ve given enough.</p>
+
+      <p>I’ve had my own versions of that conversation with God. Why this? Why again? What exactly am I supposed to do with this one?</p>
+
+      <p>I don’t believe God makes mistakes. Not many, anyway. We have a few things to discuss, but that’s between me and him.</p>
+
+      <p>But I do believe he chooses the right people for the right problems. I know how that sounds when the problem is someone you love dying. I would have happily been the wrong person for that. Nobody wants to discover their capacity for grief by being given more of it.</p>
+
+      <p>Still, sitting in the car, I found myself agreeing with her.</p>
+
+      <p>When you’re going through something horrible, you don’t get to know how you’ll eventually talk about it. You have whatever you have that day, which can feel like very little. You look at what’s being asked of you and think there has been some administrative error. Someone has seriously overestimated your qualifications.</p>
+
+      <p>Then, years later, you hear yourself telling the story.</p>
+
+      <p>I think we sometimes pass over that part too quickly. We remember how impossible it felt, how certain we were that we couldn’t take another thing. And here we are, describing it. We lived long enough for there to be an afterward.</p>
+
+      <p>That means something to me.</p>
+
+      <p>Although, when I think about my father, I have to be careful with what I make it mean. I’ve seen what surviving has cost him. I can’t look at the ways he has changed and pretend that making it through means making it through untouched. He gave things he hasn’t gotten back. So have I.</p>
+
+      <p>My sister is still gone. My uncle is still gone. There isn’t a version of being strong enough that fixes either of those sentences.</p>
+
+      <p>Maybe that’s where I’ve been unfair to myself. I keep expecting strength to feel more convincing while it’s happening. I expect to recognize it, to feel equipped for whatever comes next. Looking back, I can see that I kept going through things I felt completely unprepared for. At the time, I mostly remember feeling unprepared.</p>
+
+      <p>The song gave me a moment to consider that I might be capable before I have proof. That if I believe God knows what he’s doing, I could extend a little of that belief to his judgment of me.</p>
+
+      <p>I’m not volunteering for another tragedy. I’d appreciate a quiet stretch. So would my family.</p>
+
+      <p>But whatever comes next, I’d like to remember that I’ve underestimated myself before. There were things I couldn’t imagine living through that I’m now telling you about.</p>
+
+      <p>So when that line comes around again, I’m singing along.</p>
+
+      <p>God said I’m the best for the joooooooooooooob, I agree!</p>
+
+      <p class="article-published">Published <time datetime="2026-09-24">September 24, 2026</time></p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Without the Loudspeaker — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Without the Loudspeaker</h1>
+      <div class="meta">Published <time datetime="2026-09-24">September 24, 2026</time></div>
+    </div>
+
+    <div class="article-body">
+
+      <p>At a protest in San Diego, someone tried to hand me a loudspeaker. I turned it down. My voice carries well enough on its own, which anyone who has ever lived with me can unfortunately confirm.</p>
+
+      <p>I wanted to lose it that day. I wanted to go home hoarse because I had seen the video of George Floyd, and sitting at home with an opinion didn’t feel like enough. I went back for multiple days. Front row, shouting, completely certain that I belonged there.</p>
+
+      <p>I believed I was on the right side of history. It’s a large phrase to give yourself, but that was how I felt. There was something happening in front of me that I couldn’t accept, and thousands of other people had come outside because they couldn’t accept it either. For once, I didn’t feel particularly conflicted about what to do.</p>
+
+      <p>Then, later, I read reports about the finances of the Black Lives Matter Global Network Foundation, including its purchase of a roughly six-million-dollar property in Los Angeles.</p>
+
+      <p>I felt stupid.</p>
+
+      <p>That’s uncomfortable to admit because nobody’s financial decisions changed what happened to George Floyd. I knew that. I hadn’t marched because I had reviewed an organization’s budget and found its administrative expenses reasonable. I had watched a man die under another man’s knee.</p>
+
+      <p>But the reports still reached backward into my memory of being there. I felt weird about the chanting, the certainty, how readily I had put my whole heart into something without asking many questions about the people associated with it.</p>
+
+      <p>I started questioning my judgment. Then everyone else’s judgment, because apparently I like to be thorough.</p>
+
+      <p>How much did any of us know? How much had I assumed because the cause was right? I had been so certain about why I was there that I hadn’t given much thought to what else I might be trusting along the way.</p>
+
+      <p>Even now, I have to be precise about what disappointed me. A movement, an organization, and the people marching beside you can become one thing in your head. They share a name or a slogan, and you stop making distinctions. Then you read something about one of them and feel betrayed by all of them.</p>
+
+      <p>I don’t know what the person who offered me that loudspeaker knew about any foundation. I don’t know whether they had any connection to it whatsoever. In my memory, they were simply there, doing what I was doing.</p>
+
+      <p>It would be unfair to go back and make them answer for people they might never have met.</p>
+
+      <p>And yet that’s how distrust can spread. I read something that made me question particular people, and soon I was questioning the sincerity of a whole experience, including my own. I knew why I had gone. Somehow, I was still embarrassed that I had gone so wholeheartedly.</p>
+
+      <p>I think some of that embarrassment comes from how much I want to believe I’m a good judge of things. I like to think I’m aware of the world around me. That I ask questions. That I can recognize when someone is taking advantage of people.</p>
+
+      <p>It’s unpleasant to discover that caring deeply doesn’t give you any special protection against being misled. You can mean every word you’re saying and still know very little about the people who benefit from your saying it.</p>
+
+      <p>My intentions were pure. I still believe that. But I can also see how easily that sentence could become an excuse to stop examining my decisions. Meaning well matters to me. So does knowing what I’m putting my name, money, or voice behind.</p>
+
+      <p>Since then, I’ve become more wary of diving into things with one hundred percent of my heart and none of my brain. At the time, that can feel like conviction. The questions come later, when you’re trying to work out how much of your certainty was earned.</p>
+
+      <p>Of course, now I get to judge my earlier self with information he didn’t have. Very impressive work from me. Excellent use of hindsight.</p>
+
+      <p>He had the video. He had what he knew about the world at that point. He had a decision to make about whether to stay home or go outside, and he went outside.</p>
+
+      <p>I don’t regret caring about what happened. I don’t think the answer is to become so suspicious that I need every person involved in something to pass an investigation before I’ll stand beside them. I could spend the rest of my life preparing to do one decent thing.</p>
+
+      <p>But I want to ask more questions. I want to be able to agree with a cause and still examine the people asking to represent it. I want to stop treating doubt as something that automatically weakens a conviction. Sometimes there’s a very reasonable question underneath it.</p>
+
+      <p>I’m still uncomfortable remembering how certain I felt in San Diego. I also remember why I felt it, and I owe that version of myself enough honesty to keep both in the story.</p>
+
+      <p>He did the best he could with what he knew.</p>
+
+      <p>I know a little more now. I’d still want to do something.</p>
+
+      <p>I’d probably still turn down the loudspeaker.</p>
+
+      <p class="article-published">Published <time datetime="2026-09-24">September 24, 2026</time></p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
