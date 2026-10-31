@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where Was This Policy? — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Where Was This Policy?</h1>
+      <div class="meta">Published <time datetime="2026-10-30">October 30, 2026</time></div>
+    </div>
+
+    <div class="article-body">
+
+      <p>A friend told me her mother had advised her to be gentler and more patient with her kids. The kids were being loud, everyone wanted something at the same time, and she had raised her voice. Her mother told her to calm down.</p>
+
+      <p>“Calm down” has a remarkable success rate for two words that have never calmed anyone down.</p>
+
+      <p>My friend was venting, but she was also taking it seriously. She knew she lost her patience sometimes. She was trying to be more conscious of it. And I, having been invited into a conversation about patience, immediately ran out of patience on her behalf.</p>
+
+      <p>I told her she was allowed to be overwhelmed. That she couldn’t keep swallowing every feeling because she had children. If everyone gets to be loud except the person responsible for keeping everyone alive, that feels like a staffing issue.</p>
+
+      <p>Besides, by my very generous definition, raising your voice occasionally still falls somewhere inside gentle parenting. There are probably books that would disagree with me. I have thoughtfully avoided consulting them.</p>
+
+      <p>I meant that she needed room to be a person. Somewhere to put the frustration, some way to say she’d had enough without feeling like she’d failed at motherhood. I still believe that. Children can need your patience at the exact moment you have none left, and knowing what you should do doesn’t magically replenish the supply.</p>
+
+      <p>But her mother had said something else, too. She felt she hadn’t made her own daughter feel safe enough to confide in her.</p>
+
+      <p>That part should have slowed me down.</p>
+
+      <p>Instead, I was busy defending my friend. It’s very easy to become someone’s attorney when nobody has asked you to pass the bar. I had heard the correction, understood why it was frustrating, and started preparing my case.</p>
+
+      <p>There’s an obvious objection when a parent gives advice they didn’t always follow themselves. You remember being the child. You remember how things felt from that end of the room. Now they’re standing beside you, recommending patience, and some part of you wants to ask where this policy was when you lived under their management.</p>
+
+      <p>It’s a fair question. Their regret doesn’t give you a different childhood.</p>
+
+      <p>But I started thinking about something an uncle told me years ago. Sometimes an older person is giving you advice because they have more mistakes to look back on. They recognize where you’re headed. They’ve already had time to find out what it costs.</p>
+
+      <p>I’d remembered that advice well enough to repeat it. Apparently applying it required a separate subscription.</p>
+
+      <p>My friend’s mother wanted better for her daughter. She had admitted something painful about her own parenting, and here she was watching her daughter struggle with her children. I can’t know everything she meant in that moment. But we had been so occupied with whether she had the standing to give advice that we’d barely considered what it might have taken for her to offer that particular advice.</p>
+
+      <p>How do you watch someone you love approach a mistake you still regret? Especially when that person is also someone who lived through yours?</p>
+
+      <p>You could stay quiet. That would spare you the understandable response that you weren’t exactly an expert when it was your turn. You could also say something and hope your daughter hears the concern, even if your timing is terrible and your opening sentence is “calm down.”</p>
+
+      <p>I don’t think getting older automatically makes anyone wise. Some people have been repeating the same mistake for forty years and would now like to offer a master class. Age alone isn’t much of a qualification.</p>
+
+      <p>But I’m beginning to think I should listen more carefully when someone tells me what they wish they’d done differently. I can decide whether the advice fits my life after I’ve actually heard it. I don’t need to dismiss it the second I remember they weren’t perfect.</p>
+
+      <p>My friend needed someone to hear how hard she was trying. Her mother seemed to be trying to tell her something about how hard it is to look back. I was so ready to speak for one of them that I nearly missed the other.</p>
+
+      <p>My uncle gave me that advice years ago.</p>
+
+      <p>I’m only now getting around to taking it.</p>
+
+      <p class="article-published">Published <time datetime="2026-10-30">October 30, 2026</time></p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
