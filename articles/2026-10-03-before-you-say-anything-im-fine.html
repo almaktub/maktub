@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before You Say Anything, I’m Fine — Maktub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-en">maktub</span>
+      <span class="logo-fa" lang="fa">مکتوب</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Before You Say Anything, I’m Fine</h1>
+      <div class="meta">Published <time datetime="2026-10-03">October 3, 2026</time></div>
+    </div>
+
+    <div class="article-body">
+
+      <p>There's a difference between someone you want at your wedding and someone you'd call after hitting a deer. One invitation comes with dinner. The other starts with, "Before you say anything, I'm fine."</p>
+
+      <p>Afghan weddings don't have guest lists so much as a census. Two hundred people is the floor. If the food is good, everybody curses your father for how good it was. If it's bad, you already know. And somewhere in that hall is an uncle whose exact relationship to the groom would take a genealogist and the cooperation of three countries to confirm.</p>
+
+      <p>I'm usually the one defending the culture. This time I'd like to cross-examine it a little.</p>
+
+      <p>Only a little, because I know why it works this way. A wedding isn't just two people. Families carry debts to each other that are older than the couple. When my sister died, my parents were too buried in grief to find a place to bury her on that kind of notice. A man my father had worked with years before offered his own family's cemetery. Nobody will ever have to explain to me why that man belongs on a guest list.</p>
+
+      <p>Still, stand in a hall of two hundred people who are all happy for you and it would be easy to walk out thinking you have two hundred friends.</p>
+
+      <p>There are plenty of people I like seeing. We talk, we laugh, we say we should do this more often, which everyone understands is how you end a conversation. Some of them make a night better just by walking in.</p>
+
+      <p>Then there are two people whose names come up before my brain has finished working out what just happened. My baby brother, and my cousin B, who is also my best friend. If there's a girl I like and I can't put a sentence together, I text one of them. If I'm ever on the shoulder of the freeway with a cracked bumper and a deer, same two. Very different punctuation.</p>
+
+      <p>What they have is history with my nonsense. I don't have to put together a presentable version of myself before I call.</p>
+
+      <p>That counts most when things are bad. When there's twenty dollars in the account and the account seems offended that you checked, needing help is embarrassing in a very particular way. You can burn more energy sounding fine than it would take to just say what's wrong. With those two, I skip that part.</p>
+
+      <p>There have been stretches when I wanted to turn that into a verdict on everyone else. Two hundred people found the wedding hall. Where was everybody when it went bad?</p>
+
+      <p>But I never called most of them. They didn't know anything was wrong, because I made sure they didn't. I can't hold it against someone I see twice a year that they missed what I was hiding from people I see every day.</p>
+
+      <p>Some people are for dinner and a good laugh, and that's a real place to have in someone's life. The mistake is forgetting who's who.</p>
+
+      <p>Saadi has a line: <em>dost aan bashad ke girad dast-e dost, dar parishan-hali o darmandegi.</em> A friend is the one who takes your hand when you're falling apart and out of options. I can count the people who've earned that line on two fingers. I'd drive a ridiculous distance to see either of them and complain about the traffic the whole way, like it wasn't my idea.</p>
+
+      <p>I don't need everyone at the wedding to be that person.</p>
+
+      <p>But I want to know whose name I'm looking for when my hands are shaking and I unlock my phone.</p>
+
+
+      <p class="article-published">Published <time datetime="2026-10-03">October 3, 2026</time></p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Maktub All rights reserved...... jk None of this is copyrighted lmfao, just checking if you were curious enough to scroll here lol.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
